@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <title>Roman and Arabic Number Converter</title>
+</head>
+<body>
+    <div>
+        <center><h1>Choose a Number Conversion</h1>
+            <button id="toRoman" class="float-left submit-button" >Arabic to Roman</button>
+            <script type="text/javascript">
+                document.getElementById("toRoman").onclick = function () {
+                    location.href = "/arabic_to_roman";
+                };
+            </script>
+            <button id="toArabic" class="float-left submit-button" >Roman to Arabic</button>
+            <script type="text/javascript">
+                document.getElementById("toArabic").onclick = function () {
+                    location.href = "/roman_to_arabic";
+                };
+            </script>
+        </center>
+    </div>
+</body>
+</html>

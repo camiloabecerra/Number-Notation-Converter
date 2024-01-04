@@ -1,0 +1,85 @@
+html{
+    background-color: #232424;
+    font-family: "Monaco", monospace;
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+h1{
+    font-size: 30px;
+    font-family: "Monaco", monospace;
+    color: whitesmoke;
+}
+
+h3{
+    font-size: 30px;
+    font-family: "Monaco", monospace;
+    color: whitesmoke;
+}
+
+.error{
+    font-size: 30px;
+    font-family: "Monaco", monospace;
+    color: rgb(228, 63, 63);
+    font-weight: lighter;
+}
+
+button{
+    transition-duration: 0.3s;
+    background-color: #232424;
+    color: whitesmoke;
+    border-radius: 10px;
+    border: 2px solid rgb(146, 146, 146);  
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Monaco", monospace;
+    width: 30%;
+    font-size: 20px;
+}
+
+.backButton{
+    width: 15%;
+    position: absolute;
+    bottom: 0;
+}
+
+.box{
+    border-radius: 5px;
+    width: 35%;
+    background-color: #232424;
+    font-family: "Monaco", monospace;
+    font-size: 20px;
+    border: 2px solid rgb(146, 146, 146);  
+    color: whitesmoke;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.submission{
+    transition-duration: 0.3s;
+    background-color: #232424;
+    color: whitesmoke;
+    border-radius: 5px;
+    border: 2px solid rgb(146, 146, 146);  
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Monaco", monospace;
+    font-size: 20px;
+    width: 25%;
+}
+
+.submission:hover{
+    background-color: rgb(146, 146, 146);
+    color: #232424;
+}
+
+button:hover{
+    background-color: rgb(146, 146, 146);
+    color: #232424;
+}

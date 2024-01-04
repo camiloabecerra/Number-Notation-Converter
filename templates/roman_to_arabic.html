@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <title>Roman To Arabic Conversion</title>
+</head>
+<body>
+    <div>
+        <form class="grid" action = "/roman_to_arabic_result" method ="POST">
+            <center>
+                <h1 for="Arabic Number">Roman to Arabic Number</h1>
+                <input class="box" autocomplete="off" type="text" id="roman" name="roman" minlength="1" onkeyup="this.value = this.value.replace(/[^A-Z]/, '')" autocapitalize="characters">
+                <input type="Submit" class = "submission" value="Convert">
+                {% if arabic %}
+                    <h3 id="result">Result: {{ arabic }}</h3>
+                {% elif error %}
+                    <h3 class="error">Error: {{ error }}</h3>
+                {% endif %}
+            </center>
+        </form>
+        <button id="goBack" class="backButton">Back</button>
+            <script type="text/javascript">
+                document.getElementById("goBack").onclick = function () {
+                    location.href = "/home";
+                };
+        </script>
+    </div>
+</body>
+</html>
